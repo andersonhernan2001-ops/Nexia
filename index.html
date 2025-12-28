@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <section id="home" class="page active">
+    <header>Social</header>
+    <div class="stories" id="stories"></div>
+    <div id="feed"></div>
+  </section>
+
+  <section id="create" class="page">
+    <h2>Crear publicación</h2>
+    <input id="postText" placeholder="¿Qué estás pensando?">
+    <input type="file" id="postImage">
+    <button onclick="createPost()">Publicar</button>
+  </section>
+
+  <section id="activity" class="page">
+    <h2>Actividad</h2>
+    <p>Likes y comentarios aparecerán aquí</p>
+  </section>
+
+  <section id="profile" class="page">
+    <img id="avatar" src="https://via.placeholder.com/80">
+    <input type="file" id="avatarInput">
+    <button onclick="editUser()">Editar perfil</button>
+    <p id="username">@usuario</p>
+  </section>
+
+  <nav>
+    <button onclick="showPage('home')">🏠</button>
+    <button onclick="showPage('create')">➕</button>
+    <button onclick="showPage('activity')">❤️</button>
+    <button onclick="showPage('profile')">👤</button>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
